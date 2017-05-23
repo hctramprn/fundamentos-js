@@ -15,3 +15,11 @@ function calcularTriangulo() {
   let resultadoTriangulo = (base * altura / 2).toFixed(2);
   areaTriangulo.innerHTML = `El área del triángulo es <strong>${resultadoTriangulo} unidades cuadradas</strong>`
 }
+
+function calcularCuadrado() {
+  let ladoCuadrado = document.getElementById("ladoCuadrado");
+  let areaCuadrado = document.getElementById("areaCuadrado");
+  let lado = ladoCuadrado.value;
+  let resultadoCuadrado = (lado * lado).toFixed(2);
+  areaCuadrado.innerHTML = `El área del cuadrado es <strong>${resultadoCuadrado} unidades cuadradas</strong>`
+}
