@@ -3,7 +3,7 @@ function traductor() {
   const s = document.getElementById("palabra")
   const textoTraducido = document.getElementById("textoTraducido")
   const str = (s.value).toLowerCase()
-  let texto = ''
+  let texto = str
 
   //Si la palabra es un palíndromo, no aplica alternan entre mayúsculas y minúsculas, y no aplica ninguna otra regla
   const reversa = (str) => str.toLowerCase().split('').reverse().join('')
@@ -31,7 +31,9 @@ function traductor() {
   }
 
   //Si la palabra inicia con Z, se le añade 'pe' al final
-
+  if (str.startsWith('z')) {
+    texto += 'pe'
+  }
 
   //Si la palabra traducida tiene más de 10 caracteres, se parte a la mitad y se une con un guión en medio
 
