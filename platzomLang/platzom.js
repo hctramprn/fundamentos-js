@@ -17,7 +17,7 @@ function traductor() {
       texto += mayuscula ? caracter.toUpperCase() : caracter.toLowerCase()
       mayuscula = !mayuscula
     }
-    return texto
+    return textoTraducido.innerHTML = `La palabra traducida es: <strong>${texto}</strong>`
   }
 
   if (str.toLowerCase() == reversa(str)) {
