@@ -36,5 +36,11 @@ function traductor() {
   }
 
   //Si la palabra traducida tiene más de 10 caracteres, se parte a la mitad y se une con un guión en medio
-
+  const long = texto.length
+  if (long >= 10) {
+    const primeraMitad = texto.slice(0, Math.round(long / 2))
+    const segundaMitad = texto.slice(Math.round(long / 2))
+    texto = `${primeraMitad}-${segundaMitad}`
+  }
+  return textoTraducido.innerHTML = `La palabra traducida es: <strong>${texto}</strong>`
 }
