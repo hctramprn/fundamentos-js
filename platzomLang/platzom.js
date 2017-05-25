@@ -35,7 +35,7 @@ function traductor() {
       }
 
       //Si la palabra inicia con Z, se le añade 'pe' al final
-      if (str.startsWith('z')) {
+      if (str.toLowerCase().startsWith('z')) {
         texto += 'pe'
       }
 
